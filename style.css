@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 75em) {
+  html{
+    font-size: 60%;
+  }
+}
+
+
+
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.0rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+
+
+
+
+#page-name {
+  color: black;
+  font-size: 1.0rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #002a5c;
+  z-index: 10;
+}
+
+.page-name {
+  display: flex;
+  margin-left: 2rem;
+  font-size: 2.0rem;
+  margin-top: 1.0rem;
+}
+
+.nav-link {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-link a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+
+
+
+
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #b2b7bb;
+}
+
+.welcome-section > p {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #002a5c;
+}
+
+
+
+
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #69be28;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.25rem solid #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  background: #002a5c;
+  border-radius: 2px;
+}
+
+.project-image {
+  height: calc(100% -6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+}
+
+
+
+
+
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background-color: #b2b7bb;
+}
+
+.contact-section-header > h2 {
+  font-size: 5rem;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+  justify-content: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 1.5rem;
+  padding: 0 2rem
+}
